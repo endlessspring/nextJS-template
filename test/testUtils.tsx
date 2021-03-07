@@ -14,9 +14,9 @@ const Providers = ({ children }) => {
   // )
 }
 
-const customRender = (ui, options = {}) =>
+const customRender = (ui, options = {}): void => {
   render(ui, { wrapper: Providers, ...options })
-
+}
 // re-export everything
 export * from '@testing-library/react'
 
